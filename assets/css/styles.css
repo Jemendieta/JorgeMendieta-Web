@@ -24,16 +24,16 @@ ul {
 a {
   text-decoration: none;
 }
+
 #main {
   width: 100%;
   height: 100vh;
   background-color: var(--maincolor);
   position: relative;
-  background-image: url("https://via.placeholder.com/450x520");
-
+  background-image: url("../images/bg.png");
   background-repeat: no-repeat;
-  /* background-size: 450px 400px; */
-  background-position: 95% center;
+  background-position: right bottom;
+  background-size: 1200px;
 }
 nav {
   display: flex;
@@ -178,3 +178,23 @@ nav {
   color: #ffffff;
   font-weight: 400;
 }
+.about-text p {
+  font-size: 1.2rem;
+  color: rgba(251, 251, 251, 0.9);
+  margin-bottom: 15px;
+}
+.about-text button {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--namecolor);
+}
+.about-text button:hover {
+  background-color: #ffffff;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+/* -----------------Services--------------------- */
