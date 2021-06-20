@@ -30,10 +30,10 @@ a {
   height: 100vh;
   background-color: var(--maincolor);
   position: relative;
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg3.jpg");
   background-repeat: no-repeat;
   background-position: right bottom;
-  background-size: 1200px;
+  background-size: 1320px;
 }
 nav {
   display: flex;
