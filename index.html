@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="assets/images/icon.png"
+      href="assets/images/icon2.png"
       type="image/x-icon"
     />
     <script
@@ -24,12 +24,13 @@
     <section id="main">
       <nav>
         <a href="" class="logo"><span>J</span>orge <span>M</span>endieta</a>
+        <div class="toggle"></div>
         <ul class="menu">
-          <li><a href="#" class="active">Inicio</a></li>
-          <li><a href="#">Sobre Mi</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Portafolio</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#main" class="active">Inicio</a></li>
+          <li><a href="#about">Sobre Mi</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact-form">Contacto</a></li>
         </ul>
       </nav>
 
@@ -68,10 +69,163 @@
         <button>Más Información</button>
       </div>
       <div class="about-model">
-        <img src="https://placeimg.com/529/547/people" alt="imagen de perfil" />
+        <img src="https://placeimg.com/529/547/tech" alt="imagen de perfil" />
       </div>
     </section>
 
-    <section id="services"></section>
+    <section id="services">
+      <div class="services-header">
+        <h2>Servicios</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          voluptatem perspiciatis. Nobis aut dolorum corrupti.
+        </p>
+      </div>
+
+      <div class="services-container">
+        <div class="services-box">
+          <div class="box-img">
+            <div class="box-type">Front-End</div>
+            <img src="assets/images/s1.png" alt="" />
+          </div>
+          <div class="box-text">
+            <a href="#"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              voluptates ullam ducimus libero unde dolor?</a
+            >
+          </div>
+        </div>
+
+        <div class="services-box">
+          <div class="box-img">
+            <div class="box-type">TIC</div>
+            <img src="assets/images/s2.png" alt="" />
+          </div>
+          <div class="box-text">
+            <a href="#"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              voluptates ullam ducimus libero unde dolor?</a
+            >
+          </div>
+        </div>
+
+        <div class="services-box">
+          <div class="box-img">
+            <div class="box-type">Agile</div>
+            <img src="assets/images/s4.png" alt="" />
+          </div>
+          <div class="box-text">
+            <a href="#"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              voluptates ullam ducimus libero unde dolor?</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="portfolio-header">Portafolio</h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Priyecto 1</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w1.jpg" alt="portfolio" />
+        </div>
+
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Proyecto 2</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w2.jpg" alt="portfolio" />
+        </div>
+
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Proyecto 3</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w3.jpg" alt="portfolio" />
+        </div>
+
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Proyecto 4</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w4.jpg" alt="portfolio" />
+        </div>
+
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Proyecto 5</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w5.jpg" alt="portfolio" />
+        </div>
+
+        <div class="portfolio-box">
+          <div class="text-overlay">
+            <h2>Proyecto 6</h2>
+            <p>Proyecto de cliente</p>
+          </div>
+          <img src="assets/images/w6.jpg" alt="portfolio" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-button">
+      <h2 class="contact-header">¿Tienes algún proyecto en mente?</h2>
+      <a href="#contact-form">Contáctame</a>
+    </section>
+
+    <section id="contact-form">
+      <form>
+        <div class="contact-left">
+          <h1 class="contact-left-header">
+            <font style="border-bottom: 3px solid #1ed98b">Writ</font>e us
+          </h1>
+
+          <div class="form-name">
+            <font>Nombre</font>
+            <input type="text" placeholder="Full Name" />
+          </div>
+
+          <div class="form-email">
+            <font>Email</font>
+            <input type="email" placeholder="Example@gmail.com" />
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="message">
+            <font>Mensaje</font>
+            <textarea
+              name="message"
+              rows="5"
+              cols="20"
+              placeholder="Write Message..."
+            ></textarea>
+          </div>
+
+          <button>submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+    <script type="text/javascript">
+      /*Responsive Navigation*/
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+
+          $("nav ul").toggleClass("active-menu");
+        });
+      });
+    </script> -->
   </body>
 </html>
