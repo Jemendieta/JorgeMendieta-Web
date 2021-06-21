@@ -584,7 +584,7 @@ p {
   }
 }
 @media (max-width: 900px) {
-  .toggle {
+  /* .toggle {
     display: block;
   }
   .toggle:before {
@@ -595,7 +595,7 @@ p {
   }
   .toggle.active:before {
     content: "\f00d" !important;
-  }
+  } */
   nav {
     padding: 10px 30px;
   }
